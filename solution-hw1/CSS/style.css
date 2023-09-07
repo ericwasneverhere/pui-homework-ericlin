@@ -1,0 +1,102 @@
+body{
+    color:black;
+    font-family:sans-serif;
+    align-items:center;
+
+}
+
+.rolls{
+    padding:8px;
+    width:200px;
+    margin-left:auto;
+    margin-right:auto;
+    align-items:center;
+    text-align:center;
+
+}
+
+.rolls:hover{
+    background-color:yellow;
+
+}
+
+.rolls img{
+    width:80%;
+    height:auto;
+    outline:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.roll-content{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.roll-description{
+    text-align:left;
+    margin-left:16px;
+}
+
+/* css for product page */
+
+.product{
+    margin-left:auto;
+    margin-right:auto;
+    width:600px;
+}
+
+.product-image{
+    width:400px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    outline:auto;
+}
+
+.product-image img{
+    width: 400px;
+    height:auto;
+}
+
+.product-title{
+    text-align:center;
+}
+
+.product-description{
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:24px;
+}
+.selection{
+    margin-left:auto;
+    margin-right:auto;
+    width:150px;   
+}
+
+select{
+    width:150px;
+    margin-top:12px;
+    margin-bottom:12px;
+}
+input{
+    background-color: yellow;
+}
+
+/* cart information */
+
+.cart-item{
+    margin-left:auto;
+    margin-right:auto;
+    width: 300px;
+    text-align:center;
+    margin-bottom: 24px;
+}
+
+.cart-line{
+    height:2px;
+    border-width:0;
+    background-color:black;
+    width:50%;
+}
