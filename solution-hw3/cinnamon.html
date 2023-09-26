@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <title>BunBunBakeShop</title>
+    <link href="CSS/style.css" rel="stylesheet">  
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+
+    <nav>
+      <a href="index.html">
+        <img src = "../assets/logo/logo-01.svg" alt = "Original Cinnamon Roll" width="400" height="200"/>
+      </a>
+
+      <div class = "right-side">
+        <div style="text-align: right;">
+          <a a class="selected" href="index.html" style="text-decoration: none; padding: 5px 10px; margin-left: 10px; font-weight: bold;">PRODUCTS</a>
+          <a href="cart.html" style="text-decoration: none; padding: 5px 10px; margin-left: 10px;">CART</a>
+        </div>
+
+        <hr>
+        <p class = "page-title">Original Cinnamon Roll</p>
+      </div>
+    </nav>
+
+
+      <div class="product">
+      
+        <div class="product-image">
+          <img  src = "../assets/products/original-cinnamon-roll.jpg" alt = "Original Cinnamon Roll">
+        </div>
+
+        <div>
+          <div class="product-description">
+            Customize our delicious,
+            <br> 
+            hand-made cinammon roll 
+            <br>
+            to your liking!
+          </div>
+          <div class="selection">
+            <form>
+              <label for="glaze">Glazing</label> 
+              <br>
+              <select name = "glaze" onchange="glazingChange(this)">
+                <option value="keep original">keep original</option>
+                <option value="sugar milk">sugar milk</option>
+                <option value="vanilla milk">vanilla milk</option>
+                <option value="double chocolate">double chocolate</option>
+              </select>
+              <br>
+              <label for="pack-size">Pack Size</label> 
+              <br>
+              <select name = "pack-size" onchange="packingChange(this)">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+              </select>
+              <br>
+              
+              <div id="totalPrice"></div>
+
+              <!-- the price was not showing up initially when i load the 
+                screen, so i found the solution online, so it make sure other 
+                is running properly before it runs js -->
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    calculateTotalPrice();
+                });
+              </script>
+
+              <input type="submit" value="Add to Cart" >
+            </form>
+
+            </div>
+
+        </div>
+      </div>
+      
+  </body>
+</html>
