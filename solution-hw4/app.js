@@ -1,13 +1,4 @@
 //all pricings------------------------------------------------------------------
-// const bunPrices = {
-//   'Original Cinnamon Roll': 2.49,
-//   'Apple Cinnamon Roll': 3.49,
-//   'Raisin Cinnamon Roll': 2.99,
-//   'Walnut Cinnamon Roll': 3.49,
-//   'Double-Chocolate Cinnamon Roll': 3.99,
-//   'Strawberry Cinnamon Roll': 3.99,
-// };
-
 const rolls = {
   "Original": {
     "basePrice": 2.49,
@@ -50,14 +41,13 @@ const packSizePrices = {
 };
 
 //Calulating for the price------------------------------------------------------
-
 let selectedGlazing = 'keep original';
 let selectedPackSize = '1';
+
 const queryString = window.location.search.substring(6);
 const bunPrice = rolls[queryString].basePrice;
-const glazingPrice = glazingPrices[selectedGlazing];
-const packSizePrice = packSizePrices[selectedPackSize];
-const totalPrice = (bunPrice + glazingPrice) * packSizePrice;
+let glazingPrice = glazingPrices[selectedGlazing]; 
+let packSizePrice = packSizePrices[selectedPackSize]; 
 
 let selectedBun = queryString;
 
@@ -67,15 +57,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function calculateTotalPrice() {
-  const bunPrice = rolls[selectedBun].basePrice; // Get the base price for the selected bun
+  const bunPrice = rolls[selectedBun].basePrice; 
+  console.log(bunPrice, glazingPrice, packSizePrice);
   const totalPrice = (bunPrice + glazingPrice) * packSizePrice;
   document.getElementById("totalPrice").textContent = `$${totalPrice.toFixed(2)}`;
-
 }
 
 function glazingChange(element) {
   const glazingName = element.value;
   selectedGlazing = glazingName;
+  glazingPrice = glazingPrices[selectedGlazing];
   calculateTotalPrice();
 }
 
@@ -88,6 +79,7 @@ function bunChange(element) {
 function packingChange(element) {
   const packingSize = element.value;
   selectedPackSize = packingSize;
+  packSizePrice = packSizePrices[selectedPackSize];
   calculateTotalPrice();
 }
 

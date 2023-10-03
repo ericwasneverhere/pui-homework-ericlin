@@ -43,11 +43,11 @@
     </div>
     
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const queryString = window.location.search.substring(6);
-        const imgUrl = "../assets/products/" + rolls[queryString].imageFile;
-        document.getElementById("roll-image").src = imgUrl;
-      });
+      // document.addEventListener("DOMContentLoaded", function() {
+      //   const queryString = window.location.search.substring(6);
+      //   const imgUrl = "../assets/products/" + rolls[queryString].imageFile;
+      //   document.getElementById("roll-image").src = imgUrl;
+      // });
     </script>
     
     <div>
@@ -80,14 +80,10 @@
           <br>
 
           <div id="totalPrice"></div>
-
-          <!-- the price was not showing up initially when i load the 
-                screen, so i found the solution online, so it make sure other 
-                is running properly before it runs js -->
           <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              calculateTotalPrice();
-            });
+                document.addEventListener('DOMContentLoaded', function() {
+                    calculateTotalPrice();
+                });
           </script>
 
           <input id="add" type="button" value="Add to Cart">
