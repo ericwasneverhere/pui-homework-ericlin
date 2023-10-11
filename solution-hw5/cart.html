@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BunBunBakeShop</title>
+  <link href="CSS/style.css" rel="stylesheet">
+  <script defer src="./cart.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">
+      <img src="../assets/logo/logo-01.svg" alt="Original Cinnamon Roll" width="400" height="200" />
+    </a>
+
+    <div class="right-side">
+      <div style="text-align: right;">
+        <a href="index.html"
+          style="text-decoration: none; padding: 5px 10px; margin-left: 10px; font-weight: bold;">PRODUCTS</a>
+        <a class="selected" href="cart.html"
+          style="text-decoration: none; padding: 5px 10px; margin-left: 10px;">CART</a>
+      </div>
+
+      <hr>
+      <p class="page-title">Our Hand-Made Cinnamon Roll</p>
+    </div>
+  </nav>
+
+  <div id="body">
+    <div id="roll-list">
+
+      <template id="roll-template">
+
+        <div class="rollcard expanded">
+
+          <div class="cart-item">
+            <div class="rollcard-left">
+
+              <div class="rollcard-main-content">
+                <img class="roll-thumbnail" width="120" height="120" />
+
+                <div class="cart-description">
+
+                  <div class="rollcard-text">
+                    <div class="roll-title-container">
+                      <div class="roll-title">
+                        Placeholder Title
+                      </div>
+                    </div>
+
+                    <div class="roll-body">
+                      Here is some placeholder body text.
+                    </div>
+
+                    <div class="roll-pack">
+                      Here is some placeholder body text.
+                    </div>
+
+                    <div class="roll-price">
+                      $27.45
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- END rollcard-left -->
+          </div>
+
+
+          <div class="rollcard-right">
+
+            <div class="toolbar">
+              <div class="material-symbols-outlined icon icon-delete">
+                Remove
+              </div>
+            </div>
+          </div> <!-- END notecard-right -->
+
+
+        </div> <!-- END notecard -->
+
+      </template>
+
+    </div>
+  </div>
+
+
+
+  <br>
+  <hr class="cart-line">
+
+  <center>
+    Total: <p id="total"></p>
+    <br>
+    <div class="checkout">
+      <form><input type="submit" value="checkout"></form>
+    </div>
+  </center>
+
+
+
+</body>
+
+</html>
