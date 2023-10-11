@@ -50,6 +50,8 @@ class cart_item {
         this.packSize = packSize;
         this.img = "../assets/products/" + rolls[this.rollType]["imageFile"];
         this.element = null;
+        this.price = (rolls[rollType].basePrice + glazingPrices[rollGlazing]) * packSizePrices[packSize];
+
     }
 };
 let items = [];
@@ -93,19 +95,22 @@ function updateElement(roll) {
     rollTitleElement.innerText = roll.rollType + ' Cinnamon Roll';
     rollBodyElement.innerText = roll.rollGlazing;
     rollPackElement.innerText = 'Pack Size: ' + roll.packSize;
-    rollPriceElement.innerText = '$' + ((rolls[roll.rollType].basePrice + glazingPrices[roll.rollGlazing]) * packSizePrices[roll.packSize]).toFixed(2);
+    rollPriceElement.innerText = '$' + roll.price.toFixed(2);
+    total += roll.price;
 
-    total += Number(((rolls[roll.rollType].basePrice + glazingPrices[roll.rollGlazing]) * packSizePrices[roll.packSize]).toFixed(2));
 }
 
 function deleteRoll(rollcard) {
+    total -= rollcard.price; 
     rollcard.element.remove();
+    updatePrice();
 
 }
 
 function updatePrice() {
-    document.querySelector("#total").innerHTML = '$' + total;
+    document.querySelector("#total").innerHTML = '$' + total.toFixed(2); 
 }
+
 
 for (const objects of items) {
     createElement(objects);
