@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Eric Lin</title>
+
+  <!-- Stylesheets -->
+  <link href="../../src/css/style.css" rel="stylesheet" type="text/css"/>
+
+  <!-- jQuery 3.6.0 -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- JavaScript -->
+  <script defer src="../../src/js/index.js"></script> 
+
+
+  <!-- Bootstrap 5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html">Eric Lin</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
+          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="right-aligned collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../other.html">Other</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="../resume.html">Resume</a>
+            </li>
+
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="proj-specific-page container">
+        <div class="row">
+            <div class="col">
+                <img src="../../src/images/socialdetox preview.jpg" alt="proj-image" class="img-fluid">
+            </div>
+            <div class="col proj-page-text-info">
+                <h4>           
+                    SOCIAL DETOX
+                </h4>
+                <br>
+                An app that helps combat social media addiction; it aims to help users manage the amount of time they spend on social media. Instigating a friendly competitive environment, the app encourages users to keep their peers in check, as well as pick up legitimate plans that will help them combat mindless scrolling/addiction. 
+                <br>
+                <br>
+                Collaborators: Mason Kang, Clarice Du
+            </div>
+        </div>
+
+        <div class="row container">
+            <button id="first" class="jump-link col" onclick="scrollToSection('#ecoMap')">Go to Ecosystem Map</button>
+            <button class="jump-link col" onclick="scrollToSection('#process')">Go to Project Process</button>
+            <button id="last" class="jump-link col" onclick="scrollToSection('#final')">Go to Final Mockup</button>
+        </div>
+
+        <div class="row">
+            <div class="col proj-page-text-info">
+                <h4 id="ecoMap">           
+                    ECOSYSTEM COLLECTION MAP
+                </h4>
+                <br>
+                <p class="proj-content-text">
+                    Based on the ecosystem collection map, I was able to better understand the various interactions and consequences that our user faces as a result of deliberately addictive functions and features that we deemed unethical in existing social media. Instead of changing such features, I have decided on targeting the issues and emotions associated with social media addiction to achieve our desired outcomes.
+                </p>
+            </div>
+            <div class="col">
+                <img src="../../src/images/socialdetox ecm.jpg" alt="proj-image" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <img id="process" src="../../src/images/socialdetox process.jpg" alt="proj-image" class="img-fluid">
+            <h4 id="final" style="padding-top: 50px; transform: translateX(45%); transition: transform 0s;">
+                FINAL MOCKUP
+            </h4>
+            <p>
+                Upon finalizing the mockup, SocialDetox presents users with an analytics feature that draws inspiration from the popular "Spotify Wrapped" concept. This tool offers insights on users' social media usage, displayed in a calming, bright, and uplifting color scheme that fosters a positive and motivational environment. Additionally, a user-friendly skip button is provided to enhance ease of use.
+            </p>
+            <br>
+            <br>
+            <p>
+                The landing page/home page offers users an overview of the majority of the app's features and pertinent statistics, all easily accessible. The Action page features pre-made plans and personalized recommendations tailored to each user's unique usage patterns and statistics. The Action history feature presents users with contextualized results and outcomes of their previous plans, enabling them to identify and replicate effective strategies in the future.
+            </p>
+            <br>
+            <br>
+            <p style="margin-bottom: 20px;">
+                Furthermore, the app's leaderboards encourage peer competition, fostering motivation and community building among users. This feature helps to establish accountability and mutual support among users, ensuring that they stay on track with their social media detox goals.
+            </p>
+            <img id="final-img" src="../../src/images/socialdetox final mockup.jpg" alt="proj-image" class="img-fluid">
+        </div>
+        <!-- rest of rows-->
+    </div>
+</body>

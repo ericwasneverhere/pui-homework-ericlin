@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Eric Lin</title>
+
+  <!-- Stylesheets -->
+  <link href="../../src/css/style.css" rel="stylesheet" type="text/css"/>
+
+  <!-- jQuery 3.6.0 -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- JavaScript -->
+  <script defer src="../../src/js/index.js"></script> 
+
+
+  <!-- Bootstrap 5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html">Eric Lin</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
+          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="right-aligned collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../other.html">Other</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="../resume.html">Resume</a>
+            </li>
+
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="proj-specific-page container">
+        <div class="row">
+            <div class="col">
+                <img src="../../src/images/intemperelle preview.jpg" alt="proj-image" class="img-fluid">
+            </div>
+            <div class="col proj-page-text-info">
+                <h4>           
+                    ABRIDGE
+                </h4>
+                <br>
+                Abridge is a booking app that allows travelers to book a local tour guide. The app also offers locals the opportunity to request to give a tour to someone from a country that they are interested in learning about. It allows genuine connections between two different cultural communities and thus creates a personal learning experience. The target audiences are young adults who are looking to learn about the new place, experience the cultural difference, and have fun while generating long-lasting friendships.
+
+            </div>
+        </div>
+
+        <div class="row container">
+            <button id="first" class="jump-link col" onclick="scrollToSection('#moodboard')">Go to Moodboard</button>
+            <button class="jump-link col" onclick="scrollToSection('#wireframe')">Go to Wireframe</button>
+            <button id="last" class="jump-link col" onclick="scrollToSection('#final')">Go to Final Mockup</button>
+        </div>
+
+        <div class="row">
+            <div class="col proj-page-text-info">
+                <h4 id="moodboard">           
+                    MOODBOARD
+                </h4>
+                <br>
+                <p class="proj-content-text">
+                    This moodboard is composed of light colors and easy to read text with the purpose of conveying exciting and relaxed tones associated with traveling. The mellow tone of the navy is associated with the openness of the sky and the sea which inspires a sense of freedom, imagination, and connectivity. The imagery that was selected represents comfortability and trust that our user seeks. The layout was inspired by the looseness that negative space can offer.
+                </p>
+            </div>
+            <div class="col">
+                <img src="../../src/images/abridge moodboard.jpg" alt="proj-image" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="../../src/images/Abridge Sketch&Wireframe.jpg" alt="proj-image" class="img-fluid">
+            </div>
+            <div class="col proj-page-text-info">
+                <h4 id="wireframe">           
+                    SKETCH/ WIREFRAME
+                </h4>
+                <br>
+                <p class="proj-content-text">
+                    My preliminary sketches for Abridge were to find a way to highlight all the vital and important pieces of information that are associated with a travel app while allowing users to feel comfortable navigating the app itself. This meant that I needed to portray the app as being simple and concise while also providing the necessary tools for the user to be successful. Using inspiration from other travel apps, I tried to mesh the successful ideas that have been proven to work with my own personal design to create Abridge.
+
+                </p>
+                <p class="proj-content-text">
+                    In this wireframing process, I took the original ideas from my sketch and made a more refined version of them. I included an onboarding process to help new users create an account, as well as adding more structure to the skeleton of the app. Because of the limited space available on mobile frames, I did my best to fit as much necessary information and components without making the app feel clustered. Breathability is important while designing mobile applications, so creating a harmonious balance between just enough information without it being too much was vital during this phase.
+                </p>
+
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <h4 id="final" style="padding-top: 50px; transform: translateX(45%); transition: transform 0s;">
+                FINAL MOCKUP
+            </h4>
+            <p>
+                In the final mockup, color was extremely important in being able to convey the ambience of a trusting yet inspiring app. Combining the cool toned colors of blue and green along with the imagery of nature, helped to create an approachable app where the user feels trusting. All of this coupled with important information like being able to filter choices based on preferences, having blog posts to inspire choices that users might make to determine where they were traveling or which travel guide to choose, and a dedicated portion of the app for travel guides to be able to see back-end options make the app easily read and understood from both perspectives.
+
+            </p>
+            <img id="final-img" src="../../src/images/Abridge Final Mockup (1).jpg" alt="proj-image" class="img-fluid">
+        </div>
+        <!-- rest of rows-->
+    </div>
+</body>
